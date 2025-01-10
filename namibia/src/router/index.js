@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../components/HomeView.vue';
-import RopaComponent from '../components/RopaComponent.vue';
-import CalzadoComponent from '../components/CalzadoComponent.vue';
-import ComplementosComponent from '../components/ComplementosComponent.vue';
+import RopaComponent from '../components/RopaComp.vue';
+import CalzadoComponent from '../components/CalzadoComp.vue';
+import ComplementosComponent from '../components/ComplementosComp.vue';
 
 
 const routes = [

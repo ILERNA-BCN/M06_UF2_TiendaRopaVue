@@ -1,24 +1,22 @@
 <template>
   <div>
-    <PHeader/>
-    <router-view/>
-    <h1>Bienvenida a tu primer (segundo?) vue</h1>
-    <router-view></router-view>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
+    <PHeader />
+    <router-view />
+    <PFooter />
   </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
 import PHeader from './components/PHeader.vue';
+import PFooter from './components/PFooter.vue';
 
 export default {
   name: 'App',
   components: {
-    PHeader
-  }
-}
+    PHeader,
+    PFooter,
+  },
+};
 </script>
 
 <style>
@@ -31,4 +29,3 @@ export default {
   margin-top: 60px;
 }
 </style>
-
