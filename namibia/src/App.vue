@@ -1,17 +1,24 @@
 <template>
   <div>
     <PHeader />
-    <router-view />
+
+    <router-view v-slot="{ Component }">
+      <transition name="fade">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+
     <PFooter />
+    
   </div>
 </template>
 
 <script>
-import PHeader from './components/PHeader.vue';
-import PFooter from './components/PFooter.vue';
+import PHeader from "./components/PHeader.vue";
+import PFooter from "./components/PFooter.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     PHeader,
     PFooter,
@@ -27,5 +34,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
