@@ -9,19 +9,19 @@
       <nav>
         <ul class="nav">
           <li class="nav-item">
-            <router-link to="/HomeView.vue" class="nav-link ">Inicio</router-link>
+            <router-link to="/" class="nav-link ">Inicio</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/RopaComp.vue" class="nav-link ">Ropa</router-link>
+            <router-link to="/ropa" class="nav-link ">Ropa</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/CalzadoComp.vue" class="nav-link ">Calzado</router-link>
+            <router-link to="/calzado" class="nav-link ">Calzado</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/ComplementosComp.vue" class="nav-link ">Complementos</router-link>
+            <router-link to="/complementos" class="nav-link ">Complementos</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/ContactoComp.vue" class="nav-link ">Contacto</router-link>
+            <router-link to="/contacto" class="nav-link ">Contacto</router-link>
           </li>
         </ul>
       </nav>
