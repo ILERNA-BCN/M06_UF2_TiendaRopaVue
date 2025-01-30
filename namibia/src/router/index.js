@@ -1,18 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../components/HomeView.vue';
-import RopaComponent from '../components/RopaComp.vue';
-import CalzadoComponent from '../components/CalzadoComp.vue';
-import ComplementosComponent from '../components/ComplementosComp.vue';
 
+// Carga perezosa de los componentes para mejorar rendimiento
+const HomeView = () => import('@/components/HomeView.vue');
+const RopaComponent = () => import('@/components/PRopa.vue');
+const CalzadoComponent = () => import('@/components/PCalzado.vue');
+const ComplementosComponent = () => import('@/components/PComplementos.vue');
 
 const routes = [
-  { path: '/', component: HomeView },
-  { path: '/ropa', component: RopaComponent },
-  { path: '/calzado', component: CalzadoComponent },
-  { path: '/complementos', component: ComplementosComponent },
+  { path: '/', name: 'Home', component: HomeView },
+  { path: '/ropa', name: 'Ropa', component: RopaComponent },
+  { path: '/calzado', name: 'Calzado', component: CalzadoComponent },
+  { path: '/complementos', name: 'Complementos', component: ComplementosComponent },
+  { path: '/moda', redirect: '/ropa' }, // Redirección opcional
 ];
 
-// Llamada a crear router, con dos parametros
 const router = createRouter({
   history: createWebHistory(),
   routes,
