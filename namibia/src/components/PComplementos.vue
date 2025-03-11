@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Complementos</h1>
-    <ProductList :products="complementosProducts" />
+    <ProductList :products="complementosProducts" @agregar-al-carrito="agregarAlCarrito" />
   </div>
 </template>
 
@@ -42,6 +42,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    agregarAlCarrito(producto) {
+      this.$store.dispatch('agregarAlCarrito', producto);
+    },
   },
 };
 </script>

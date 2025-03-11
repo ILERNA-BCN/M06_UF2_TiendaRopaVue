@@ -21,10 +21,12 @@
       <ProductCard
         v-for="product in filteredProducts"
         :key="product.id"
+        :id="product.id"
         :name="product.name"
         :description="product.description"
         :price="product.price"
         :image="product.image"
+        @agregar-al-carrito="$emit('agregar-al-carrito', product)"
       />
     </div>
   </div>
@@ -63,6 +65,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* Estilos del componente */
+</style>
 
 <style scoped>
 .product-list {
