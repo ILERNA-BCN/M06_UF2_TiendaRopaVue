@@ -48,7 +48,7 @@ export default {
   },
   data() {
     return {
-      searchQuery: "", // Estado del buscador
+      searchQuery: "", 
     };
   },
   computed: {
@@ -65,10 +65,6 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-/* Estilos del componente */
-</style>
 
 <style scoped>
 .product-list {

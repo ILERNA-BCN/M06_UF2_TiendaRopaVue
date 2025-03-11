@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Calzado</h1>
+    <h1>{{ $t('footwear') }}</h1>
     <ProductList :products="calzadoProducts" @agregar-al-carrito="agregarAlCarrito" />
   </div>
 </template>

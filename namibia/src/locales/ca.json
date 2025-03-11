@@ -1,0 +1,16 @@
+{
+    "welcome": "Benvingut a Namibia",
+    "cart": "Cistella",
+    "home": "Inici",
+    "products": "Productes",
+    "checkout": "Comprar",
+    "continue_shopping": "Continuar comprant",
+    "clothes": "Roba",
+    "footwear": "Calçat",
+    "accessories": "Accessoris",
+    "contact": "Contacte",
+    "home": {
+      "welcome": "Benvinguts a NAMIBIA",
+      "welcome_message": "Descobreix les millors col·leccions de roba, calçat i complements per a dona."
+    }
+  }

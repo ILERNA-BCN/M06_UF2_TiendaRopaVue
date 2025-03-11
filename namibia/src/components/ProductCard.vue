@@ -35,13 +35,11 @@ export default {
   },
   computed: {
     priceFormateado() {
-      // Asegúrate de que price sea un número antes de usar toFixed
       return typeof this.price === "number" ? this.price.toFixed(2) + "€" : "0.00€";
     },
   },
   methods: {
     agregarAlCarrito() {
-      // Emitir un evento con los datos del producto
       this.$emit("agregar-al-carrito", {
         id: this.id,
         name: this.name,
@@ -70,9 +68,9 @@ export default {
 }
 
 .product-image {
-  width: 100%; /* Ajusta el tamaño de la imagen */
-  height: 200px; /* Altura fija */
-  object-fit: cover; /* Mantiene la proporción sin deformarse */
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -97,7 +95,7 @@ p {
 }
 
 .btn-add-to-cart {
-  background-color: #28a745; /* Verde */
+  background-color: #28a745;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -108,6 +106,6 @@ p {
 }
 
 .btn-add-to-cart:hover {
-  background-color: #218838; /* Verde oscuro */
+  background-color: #218838;
 }
 </style>

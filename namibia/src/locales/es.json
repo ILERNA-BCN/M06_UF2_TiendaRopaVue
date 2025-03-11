@@ -1,0 +1,16 @@
+{
+    "welcome": "Bienvenido a Namibia",
+    "cart": "Cesta",
+    "home": "Inicio",
+    "products": "Productos",
+    "checkout": "Comprar",
+    "continue_shopping": "Seguir comprando",
+    "clothes": "Ropa",
+    "footwear": "Calzado",
+    "accessories": "Complementos",
+    "contact": "Contacto",
+    "home": {
+      "welcome": "Bienvenidos a NAMIBIA",
+      "welcome_message": "Descubre las mejores colecciones de ropa, calzado y complementos para mujer."
+    }
+  }

@@ -5,7 +5,6 @@ export default createStore({
     carrito: [],
   },
   mutations: {
-    // Añadir un producto al carrito
     agregarAlCarrito(state, producto) {
       const productoExistente = state.carrito.find((p) => p.id === producto.id);
       if (productoExistente) {
